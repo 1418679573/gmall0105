@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pigxia.gmall.manager.mapper.PmsBaseAttrInfoDao">
+
+    <!--根据spu属性和属性值表和spuid查出对应的spu，在关联sku的属性和属性值表查询具体的某一个sku-->
+    <select id="selectAttrNamebyVlaueId" resultMap="PmsBaseAttrInfoList">
+              SELECT
+              ai.*,av.*,ai.id as ai_id,av.id as av_id
+              FROM pms_base_attr_info ai,pms_base_attr_value av
+              where ai.id=av.attr_id
+              and av.id IN (${valueIds})
+    </select>
+    <resultMap id="PmsBaseAttrInfoList" type="com.pigxia.gmall.bean.PmsBaseAttrInfo" autoMapping="true">
+        <result column="ai_id" property="id"></result>
+        <collection property="attrValueList" ofType="com.pigxia.gmall.bean.PmsBaseAttrValue" autoMapping="true">
+            <result column="av_id" property="id"></result>
+        </collection>
+    </resultMap>
+</mapper>

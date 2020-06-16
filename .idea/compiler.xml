@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="fastdfs-client-java" />
+        <module name="gmall-api" />
+        <module name="gmall-common-util" />
+        <module name="gmall-payment" />
+        <module name="gmall-seckill" />
+        <module name="gmall-service-cart" />
+        <module name="gmall-service-elasearch" />
+        <module name="gmall-service-manager" />
+        <module name="gmall-service-order" />
+        <module name="gmall-service-user" />
+        <module name="gmall-service-util" />
+        <module name="gmall-user" />
+        <module name="gmall-web-cart" />
+        <module name="gmall-web-elasearch" />
+        <module name="gmall-web-item" />
+        <module name="gmall-web-manager" />
+        <module name="gmall-web-order" />
+        <module name="gmall-web-passport" />
+        <module name="gmall-web-service-testedisson" />
+        <module name="gmall-web-user" />
+        <module name="gmall-web-util" />
+        <module name="gware-manage" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="fastdfs-client-java" target="1.6" />
+      <module name="gmall-api" target="1.5" />
+      <module name="gmall-common-util" target="1.8" />
+      <module name="gmall-parent" target="1.8" />
+      <module name="gmall-payment" target="1.8" />
+      <module name="gmall-seckill" target="1.8" />
+      <module name="gmall-service-cart" target="1.8" />
+      <module name="gmall-service-elasearch" target="1.8" />
+      <module name="gmall-service-item" target="1.8" />
+      <module name="gmall-service-manager" target="1.8" />
+      <module name="gmall-service-order" target="1.8" />
+      <module name="gmall-service-user" target="1.8" />
+      <module name="gmall-service-util" target="1.8" />
+      <module name="gmall-user" target="1.8" />
+      <module name="gmall-web-cart" target="1.8" />
+      <module name="gmall-web-elasearch" target="1.8" />
+      <module name="gmall-web-item" target="1.8" />
+      <module name="gmall-web-manager" target="1.8" />
+      <module name="gmall-web-order" target="1.8" />
+      <module name="gmall-web-passport" target="1.8" />
+      <module name="gmall-web-service-testedisson" target="1.8" />
+      <module name="gmall-web-user" target="1.8" />
+      <module name="gmall-web-util" target="1.8" />
+      <module name="gmallcommonutil" target="1.5" />
+      <module name="gmallutil" target="1.5" />
+      <module name="gware-manage" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

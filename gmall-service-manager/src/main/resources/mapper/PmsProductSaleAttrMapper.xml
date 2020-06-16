@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pigxia.gmall.manager.mapper.PmsProductSaleAttrDao">
+
+    <!--根据spu属性和属性值表和spuid查出对应的spu，在关联sku的属性和属性值表查询具体的某一个sku-->
+    <select id="spuSaleAttrListCheckBySku" resultMap="pmsProductSaleAttr">
+                SELECT
+                    sa.*,
+                    sav.*,
+                    sa.id AS sa_id,
+                    sav.id AS sav_id,
+                IF
+                    ( ssav.sku_id, 1, 0 ) AS isChecked
+                FROM
+                    pms_product_sale_attr sa
+                    INNER JOIN pms_product_sale_attr_value sav ON sa.product_id = sav.product_id
+                    AND sa.sale_attr_id = sav.sale_attr_id
+                    AND sa.product_id = #{spuId}
+                    LEFT JOIN pms_sku_sale_attr_value ssav ON sav.id = ssav.sale_attr_value_id
+                    AND ssav.sku_id = #{skuId}
+    </select>
+    <resultMap id="pmsProductSaleAttr" type="com.pigxia.gmall.bean.PmsProductSaleAttr" autoMapping="true">
+       <!--为了防止id重名，数据库进行映射错误，取别名-->
+        <result column="sa_id" property="id"></result>
+        <collection property="spuSaleAttrValueList" ofType="com.pigxia.gmall.bean.PmsProductSaleAttrValue" autoMapping="true">
+            <result column="sav_id" property="id"></result>
+        </collection>
+    </resultMap>
+</mapper>

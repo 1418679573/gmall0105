@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/gmall-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-user/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-api/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-common-util/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-service-util/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-service-user/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-web-util/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-web-user/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-web-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-service-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/fastdfs-client-java/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-web-item/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-web-service-testedisson/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-web-elasearch/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-service-elasearch/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-web-cart/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-service-cart/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-web-passport/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-web-order/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-service-order/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-payment/pom.xml" />
+        <option value="$PROJECT_DIR$/gware-manage/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-seckill/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>
