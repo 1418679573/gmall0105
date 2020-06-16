@@ -11,7 +11,7 @@ public class GwareManageApplicationTests {
 
 	@Test
 	public void contextLoads() {
-		System.out.println("bbbb");
+		System.out.println("aaaa");
 	}
 
 }
