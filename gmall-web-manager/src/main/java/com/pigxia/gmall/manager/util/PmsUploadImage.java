@@ -23,6 +23,7 @@ public class PmsUploadImage {
         ClientGlobal.init(tracker);
         // 通过TrackerClient 得到 TrackerServer获得StorageClient
         TrackerClient trackerClient = new TrackerClient();
+        ///
         TrackerServer trackerServer = trackerClient.getTrackerServer();
         StorageClient storageClient = new StorageClient(trackerServer, null);
         //  获取文件的扩展名
